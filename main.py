@@ -73,7 +73,7 @@ resize_and_rescale = tf.keras.Sequential([
 data_augmentation = tf.keras.Sequential([
     layers.experimental.preprocessing.RandomFlip("horizontal_and_vertical"),
     layers.experimental.preprocessing.RandomRotation(0.2),
-    layers.experimental.preprocessing.RandomZoom(height_factor=(0.1, 0.8))
+    # layers.experimental.preprocessing.RandomZoom(height_factor=(0.1, 0.8))
 ])
 
 model = models.Sequential()
